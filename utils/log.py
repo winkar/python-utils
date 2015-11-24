@@ -11,4 +11,4 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 streamHandler = logging.StreamHandler()
 streamHandler.setFormatter(formatter)
 
-logger.addHandler(ch)
+logger.addHandler(streamHandler)
