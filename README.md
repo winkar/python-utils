@@ -1,3 +1,8 @@
+# Install
+```shell
+pip install winkar_utils
+```
+
 # Utils for python
 
 
@@ -19,14 +24,26 @@ ox(range(10))  # this will run concurrently
 Utils for log
 
 ```python
+import logging
 from utils.log import stream_handler, formatter, logger
 
 logger.warn("test")   # the logger has been set level to warn
                       # use formatter as its default output format
                       # and will only print to stdout
+logger.setLevel(logging.INFO)
+                      # change log level
+logger.name = "test"  # change logger name
 ```
 
 
+### Factor
+```python
+from utils.factor import factor
+factor(130)         # => [2,5,13]
+factor(131)         # => [1,131]
+```
+
+Which will also add a factor command like linux to PATH
 
 # Useful third-party libraries
 
@@ -49,6 +66,9 @@ r.interactive()
 
 ### libformatstr
 Library specially for format string exploit.
+
+Install with pip.
+
 ```python
 import sys
 from libformatstr import FormatStr

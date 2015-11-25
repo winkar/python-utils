@@ -4,6 +4,10 @@ DESCRIPTION = "Util functions for python"
 AUTHOR = "WinKaR"
 AUTHOR_EMAIL = "winkar@163.com"
 VERSION = __import__(PACKAGE).__version__
+SCRIPTS = []
+import os
+if os.name=="posix":
+    SCRIPTS += ['bin/factor']
 
 try:
     from pypandoc import convert
@@ -21,7 +25,10 @@ setup(
     version=VERSION,
     description=DESCRIPTION,
     long_description=read_md("README.md"),
-    install_requires=[],
+    install_requires=[
+        "primefac",
+        ],
+    scripts=SCRIPTS,
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
     license="BSD",

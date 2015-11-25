@@ -2,7 +2,7 @@
 
 import logging
 
-logger = logging.getLogger("winkar_log_util")
+logger = logging.getLogger("WinKaR")
 
 logger.setLevel(logging.WARN)
 
