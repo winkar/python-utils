@@ -17,7 +17,8 @@ from utils.concurrent import multiThread
 def ox(x):
     return x
 
-ox(range(10))  # this will run concurrently
+ox(range(10))     # this will run concurrently
+                  # param should be a collection of orgin param type
 ```
 
 ### Log
@@ -44,6 +45,13 @@ factor(131)         # => [1,131]
 ```
 
 Which will also add a factor command like linux to PATH
+
+### Datetime
+```python
+from utils.datetime import now
+print now()       # => '2015-11-29 20:59:33'
+```
+
 
 # Useful third-party libraries
 
