@@ -27,6 +27,7 @@ setup(
     long_description=read_md("README.md"),
     install_requires=[
         "primefac",
+        "pypandoc"
         ],
     scripts=SCRIPTS,
     author=AUTHOR,
