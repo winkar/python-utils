@@ -46,12 +46,6 @@ factor(131)         # => [1,131]
 
 Which will also add a factor command like linux to PATH
 
-### Datetime
-```python
-from utils.datetime import now
-print now()       # => '2015-11-29 20:59:33'
-```
-
 
 # Useful third-party libraries
 
@@ -89,4 +83,15 @@ p[addr] = system_addr
 
 # buf is 14th argument, 4 bytes are already printed
 sys.stdout.write( p.payload(14, start_len=4) )
+```
+
+### fnmatch
+Library that supports bash-style wildcard.
+
+Install with pip
+
+```python
+from fnmatch import fnmatch
+fnmatch("target", "tar*")     # => true
+fnmatch("target", "TARG.T")   # => false
 ```
