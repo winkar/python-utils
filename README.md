@@ -5,6 +5,14 @@ pip install winkar_utils
 
 # Utils for python
 
+### Encodings
+Utils for string convert
+
+```python
+import utils
+print "asd".encode("bin")   # => 011000010111001101100100
+print "011000010111001101100100".decode("bin")  # => asd
+```
 
 ### Concurrent
 Utils for coding concurrently
