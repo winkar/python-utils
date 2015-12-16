@@ -27,7 +27,8 @@ setup(
     long_description=read_md("README.md"),
     install_requires=[
         "primefac",
-        "pypandoc"
+        "pypandoc",
+        "forbiddenfruit"
         ],
     scripts=SCRIPTS,
     author=AUTHOR,

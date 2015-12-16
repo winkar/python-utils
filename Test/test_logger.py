@@ -7,6 +7,7 @@ import unittest
 class factorTest(unittest.TestCase):
     def test_factor(self):
         try:
+            print 
             logger.name = "test"
             logger.level = logging.DEBUG
             logger.info("test info")

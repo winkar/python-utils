@@ -5,8 +5,19 @@ pip install winkar_utils
 
 # Utils for python
 
+### chaining
+Add chaining enumerate supports for iterables
+
+```python
+import utils
+range(10).map(lambda x: x**2) \
+      .filter(lambda x: x>10) \
+      .take(5) \
+      .reduce(lambda x,y: x+y)
+```
+
 ### Encodings
-Utils for string convert
+Add additional encodings for str
 
 ```python
 import utils
